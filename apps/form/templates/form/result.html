@@ -17,6 +17,9 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
+                        <div class="alert alert-success" role="alert">
+                            <strong>Thanks</strong><br> You've submitted this form {{request.session.counter}} times now.
+                        </div>
                         <div class="card card-outline-secondary">
                             <div class="card-header">
                                 <h3 class="mb-0">Submitted Info</h3>
@@ -25,19 +28,27 @@
                                 <table class="table table-striped">
                                     <tbody>
                                         <tr>
-                                            <td><strong>Name</strong></td>
+                                            <td>
+                                                <strong>Name</strong>
+                                            </td>
                                             <td>{{request.session.name}}</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Dojo Location</strong></td>
+                                            <td>
+                                                <strong>Dojo Location</strong>
+                                            </td>
                                             <td>{{request.session.location}}</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Favorite Language</strong></td>
+                                            <td>
+                                                <strong>Favorite Language</strong>
+                                            </td>
                                             <td>{{request.session.language}}</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Comment</strong></td>
+                                            <td>
+                                                <strong>Comment</strong>
+                                            </td>
                                             <td>{{request.session.comment}}</td>
                                         </tr>
                                     </tbody>
