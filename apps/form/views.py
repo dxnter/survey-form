@@ -2,8 +2,6 @@ from django.shortcuts import render, HttpResponse, redirect
 def index(request):
     if 'counter' not in request.session:
         request.session['counter'] = 0
-    response = "Hello, I am your first request!"
-    print response
     return render(request, 'form/index.html')
 
 def submit(request):
